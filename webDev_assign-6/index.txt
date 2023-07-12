@@ -1,0 +1,98 @@
+💡 **Q.1** What’s Constructor And Its Purpose?
+answer - A constructor is a special function that creates and initializes an object instance of
+ a class. In JavaScript, a constructor gets called when an object is created using the new keyword.
+  The purpose of a constructor is to create a new object and set values for any existing object 
+  properties.
+         When the this keyword is used in a constructor, it refers to the newly created object:
+
+        //Constructor
+function User() {
+    this.name = 'Bob';
+}
+
+var user = new User();
+-----------------------------------------------------------------------------------------------
+
+💡 **Q.2** Explain This Keyword and Its Purpose?
+answer - “This” keyword refers to an object that is executing the current piece of code.
+ It references the object that is executing the current function. If the function being 
+ referenced is a regular function, “this” references the global object.
+         
+- In an object method, this refers to the object.
+- Alone, this refers to the global object.
+- In a function, this refers to the global object.
+- In a function, in strict mode, this is undefined.
+- In an event, this refers to the element that received the event.
+- Methods like call(), apply(), and bind() can refer this to any object.
+
+
+💡 **Q.3** What’s Call Apply Bind Method & Difference Between them
+answer - Use . call() or . apply() when you want to invoke the function immediately, and modify
+ the context.
+ Call/apply call the function immediately, whereas bind returns a function that, when later 
+ executed, will have the correct context set for calling the original function.
+        The bind() method creates a new function that, when called, has its this keyword set to
+        the provided value, with a given sequence of arguments preceding any provided when the
+         new function is called.
+
+
+💡 **Q.4** Explain OOPS ?
+answer - Object-oriented (OO) languages usually are recognized through their use of classes 
+for creating various objects which have similar properties and methods. It is to be noted that 
+ECMA-Script has no concept of classes, and hence objects are different than in class-based
+ languages
+As in the example mentioned below:
+
+var person = new Object();
+person.name = "Karlos";
+person.age = 23;
+person.job = "Network Engineer";
+person.say_Name = function() {
+    alert(this.name);
+};
+
+
+💡 **Q.5** Whats Abstraction and Its Purpose?
+answer - Abstraction is used to hide background details or any unnecessary implementation 
+about the data so that users only see the required information. It is one of the most 
+important and essential features of object-oriented programming. Pre-defined functions are 
+similar to data abstraction.
+
+
+💡 **Q.6** Whats Polymorphism and Purpose of it?
+Answer - Polymorphism means the same function with different signatures is called many times.
+ In real life, for example, a boy at the same time may be a student, a class monitor, etc.
+  So a boy can perform different operations at the same time. This is called polymorphism.
+Polymorphism is a feature of object-oriented programming languages that allows a specific routine
+ to use variables of different types at different times.
+Polymorphism in programming gives a program the ability to redefine methods for derived classes.
+
+
+💡 **Q.7**  Whats Inheritance and Purpose of it?
+answer - Inheritance is one of the core concepts of object-oriented programming (OOP) languages.
+ It is a mechanism where you can to derive a class from another class for a hierarchy of classes 
+ that share a set of attributes and methods.
+Inheritance allows programmers to create classes that are built upon existing classes, to specify
+ a new implementation while maintaining the same behaviors (realizing an interface), to reuse
+  code and to independently extend original software via public classes and interfaces.
+
+
+💡 **Q.8** Whats Encapsulation and Purpose of it ?
+answer - Encapsulation is one of the fundamentals of OOP (object-oriented programming).
+ It refers to the bundling of data with the methods that operate on that data. Encapsulation is
+  used to hide the values or state of a structured data object inside a class, preventing 
+  unauthorized parties' direct access to them.
+
+💡 **Q.9** Explain Class in JavaScript?
+answer -
+-  A class is a type of object template.
+- The class statement initiates a JavaScript class.
+- Properties and methods are assigned in the constructor() method.
+- The constructor() method is called each time a class object is initialized.
+
+💡 **Q.10** What’s Super Keyword & What it does?
+answer - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods.
+
+super(arguments);  // calls the parent constructor (only inside the constructor)
+
+super.parentMethod(arguments);  // calls a parent method
